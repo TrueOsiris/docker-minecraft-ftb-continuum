@@ -2,7 +2,7 @@
 
 FROM java:8
 
-MAINTAINER Mattias Kågström <mattias.kagstrom@hotmail.com>
+MAINTAINER Tim Chaubet <tim@chaubet.be>
 
 ENV DOWNLOADLINK=https://media.forgecdn.net/files/2620/528/FTBContinuumServer_1.5.2.zip
 
