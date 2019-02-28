@@ -5,7 +5,7 @@ FROM java:8
 
 MAINTAINER Tim Chaubet <tim@chaubet.be>
 
-ENV DOWNLOADLINK=https://media.forgecdn.net/files/2620/528/FTBContinuumServer_1.5.2.zip
+ENV DOWNLOADLINK=https://www.feed-the-beast.com/projects/ftb-continuum/files/2658289/download
 
 RUN apt-get update && apt-get install -y wget unzip
 RUN addgroup --gid 1234 minecraft
