@@ -5,7 +5,6 @@ Dockerfile for Minecraft Continuum Server
 
 This docker image provides a Minecraft Server, based on Feed The Beast Continuum.
 
-To specify which Continuum server it downloads during install, set the enviroment variable "DOWNLOADLINK" to the one you want.
 Default is: FTBContinuumServer_1.6.zip
 
 To simply run:
@@ -20,7 +19,7 @@ will service port 25566.
 
 Speaking of multiple servers, it's handy to give your containers explicit names using `--name`, such as
 
-    docker run -d -p 25565:25565 --name minecraft mattiaskagstrom/minecraft-ftb-continuum
+    docker run -d -p 25565:25565 --name minecraft ...
 
 With that you can easily view the logs, stop, or re-start the container:
 
@@ -36,7 +35,7 @@ With that you can easily view the logs, stop, or re-start the container:
 
 In order to persist the Minecraft data, which you *probably want to do for a real server setup*, use the `-v` argument to map a directory of the host to ``/data``:
 
-    docker run -d -v /path/on/host:/data -p 25565:25565 mattiaskagstrom/minecraft-ftb-continuum
+    docker run -d -v /path/on/host:/data -p 25565:25565 ...
 
 When attached in this way you can stop the server, edit the configuration under your attached ``/path/on/host`` and start the server again with `docker start CONTAINERID` to pick up the new configuration.
 
