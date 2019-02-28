@@ -1,4 +1,5 @@
 # This is based on itzg/minecraft-server
+# forked from jeremyn20/docker-minecraft-ftb-continuum
 
 FROM java:8
 
