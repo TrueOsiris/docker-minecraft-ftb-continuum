@@ -10,7 +10,7 @@ Default is: https://media.forgecdn.net/files/2620/528/FTBContinuumServer_1.5.2.z
 
 To simply run:
 
-    docker run -d -p 25565:25565 mattiaskagstrom/minecraft-ftb-continuum
+    docker run -d -p 25565:25565 trueosiris/minecraft-ftb-continuum
 
 where the default server port, 25565, will be exposed on your host machine. If you want to serve up multiple Minecraft servers or just use an alternate port, change the host-side port mapping such as:
 
